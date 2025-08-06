@@ -1,0 +1,137 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #d6ede8, #ffffff);
+  color: #2e4e44;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #2e5e4e;
+}
+
+/* Cabeçalho e navegação */
+header {
+  background-color: #b9e3d4;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #2e5e4e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #97cbb8;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main div {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: #3c6f5b;
+  margin-bottom: 10px;
+}
+
+/* Busca de filme */
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border: 2px solid #87bfa0;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #2e5e4e;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #87bfa0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2e5e4e;
+}
+
+/* Resultado da busca */
+#resultado {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#resultado img {
+  display: block;
+  max-width: 100%;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#resultado h2 {
+  color: #2e5e4e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  color: #555;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
